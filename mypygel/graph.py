@@ -1,5 +1,5 @@
 """ This module provides a Graph class and functionality for skeletonization using graphs. """
-from pygel3d import hmesh, lib_py_gel, IntVector
+from . import hmesh, lib_py_gel, IntVector
 import ctypes as ct
 import numpy as np
 

@@ -39,11 +39,7 @@ def _get_script_path():
     return os.path.dirname(__file__)
 
 def _get_lib_name():
-    if platform == "darwin":
-        return "libPyGEL.dylib"
-    if platform == "win32":
-        return "PyGEL.dll"
-    return "libPyGEL.so"
+    return "PyGEL.dll"
 
 # Load PyGEL the Python GEL bridge library
 lib_py_gel = ct.cdll.LoadLibrary(_get_script_path() + "/" + _get_lib_name())

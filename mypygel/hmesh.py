@@ -2,7 +2,7 @@
 import ctypes as ct
 import numpy as np
 from numpy.linalg import norm
-from pygel3d import lib_py_gel, IntVector, Vec3dVector, spatial
+from . import lib_py_gel, IntVector, Vec3dVector, spatial
 from scipy.sparse import csc_matrix, vstack
 from scipy.sparse.linalg import lsqr
 from collections import defaultdict
